@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import Layout from '../components/Layout';
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
+  <div className="h-screen">
     <h1 className="text-3xl font-bold underline">
       Hello Next.js with TypeScript and Tailwind 👋
     </h1>
@@ -11,7 +10,7 @@ const IndexPage = () => (
         <a>About</a>
       </Link>
     </p>
-  </Layout>
+  </div>
 );
 
 export default IndexPage;
