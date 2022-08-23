@@ -19,7 +19,7 @@ export default function Blog({
         {commonMetaTags('Blogs Page', '/blog')}
       </Head>
 
-      <main className="flex items-center flex-col pt-12">
+      <main className="flex items-center flex-col pt-12 mb-8">
         <h1>My Blogs</h1>
 
         {filtered.length > 0 ? (

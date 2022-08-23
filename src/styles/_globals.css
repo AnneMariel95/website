@@ -4,27 +4,27 @@
   --spacing-small: 0.625rem;
   --spacing-very-small: 0.15625rem;
 
-  --color-primary-h: 140;
-  --color-constant-dark: hsl(140, 100%, 3%);
+  --color-primary-h: 335;
+  --color-constant-dark: hsl(335, 100%, 3%);
   --color-constant-light: hsl(0, 0%, 100%);
 
-  --color-primary-100: hsl(140, 100%, 95%);
-  --color-primary-200: hsl(140, 100%, 85%);
-  --color-primary-300: hsl(140, 100%, 80%);
-  --color-primary-400: hsl(140, 100%, 75%);
-  --color-primary-500: hsl(140, 100%, 60%);
-  --color-primary-600: hsl(80, 68%, 50%);
-  --color-primary-700: hsl(140, 100%, 40%);
-  --color-primary-800: hsl(140, 100%, 30%);
-  --color-primary-900: hsl(140, 100%, 20%);
+  --color-primary-100: hsl(335, 100%, 95%);
+  --color-primary-200: hsl(335, 100%, 85%);
+  --color-primary-300: hsl(335, 100%, 80%);
+  --color-primary-400: hsl(335, 100%, 75%);
+  --color-primary-500: hsl(335, 100%, 60%);
+  --color-primary-600: hsl(335, 100%, 50%);
+  --color-primary-700: hsl(335, 100%, 40%);
+  --color-primary-800: hsl(335, 100%, 30%);
+  --color-primary-900: hsl(335, 100%, 20%);
 }
 
 :root {
-  --color-primary: hsl(140, 100%, 30%);
-  --color-primary-light: hsl(80, 69%, 49%);
-  --color-primary-dark: hsl(140, 100%, 20%);
+  --color-primary: hsl(335, 100%, 30%);
+  --color-primary-light: hsl(335, 50%, 90%);
+  --color-primary-dark: hsl(335, 50%, 20%);
 
-  --color-dark: hsl(140, 100%, 3%);
+  --color-dark: hsl(335, 100%, 3%);
   --color-darkest: hsl(0, 0%, 0%);
 
   --color-light: hsl(0, 0%, 95%);
@@ -36,10 +36,10 @@
 
 .dark {
   --color-foreground: hsl(0, 0%, 100%);
-  --color-background: var(140, 100%, 3%);
-  --color-primary: hsl(140, 100%, 30%);
+  --color-background: var(335, 100%, 3%);
+  --color-primary: hsl(335, 100%, 30%);
   --color-primary-dark: hsl(80, 69%, 49%);
-  --color-primary-light: hsl(140, 100%, 20%);
+  --color-primary-light: hsl(335, 100%, 20%);
 
   --color-light: hsl(0, 0%, 13%);
   --color-lightest: hsl(0, 0%, 0%);

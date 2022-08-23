@@ -23,8 +23,8 @@ export default function WideScreenContentImpl() {
             >
               <NextLink
                 href={link.url}
-                className={clsx('hover:text-primary-600', {
-                  'text-primary-600 border-b-2 border-b-primary-600':
+                className={clsx('hover:text-primary-100', {
+                  'text-primary-100 border-b-2 border-b-primary-200':
                     router.asPath.includes(link.url),
                 })}
                 aria-label={link.label}
