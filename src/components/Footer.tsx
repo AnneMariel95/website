@@ -2,7 +2,7 @@ import NextLink from './basic/NextLink';
 
 export default function Footer() {
   return (
-    <footer className="w-full relative h-48 bg-primary-500 text-white flex justify-center overflow-hidden md:h-32">
+    <footer className="w-full relative h-48 bg-[#966767] text-white flex justify-center overflow-hidden md:h-32">
       <div
         className="flex items-center flex-col-reverse justify-center max-w-6xl w-full text-center
       md:flex-row md:justify-around md:text-right"

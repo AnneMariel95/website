@@ -17,7 +17,7 @@ import {navigationLinks} from './nav-links';
 const sidebarLinks = [
   {
     url: '/',
-    label: 'home',
+    label: 'Home',
   },
   ...navigationLinks,
 ];

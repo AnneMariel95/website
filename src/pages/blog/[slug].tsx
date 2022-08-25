@@ -1,4 +1,3 @@
-import {useEffect} from 'react';
 import fs from 'fs';
 import matter from 'gray-matter';
 import {
@@ -7,9 +6,7 @@ import {
   InferGetStaticPropsType,
 } from 'next';
 import {serialize} from 'next-mdx-remote/serialize';
-import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import {useRouter} from 'next/router';
 import path from 'path';
 import remarkMdxCodeMeta from 'remark-mdx-code-meta';
 import type {IBlogMetadata} from '../../models/blog';
@@ -27,16 +24,6 @@ export default function BlogPage({
   img,
   svg,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const router = useRouter();
-
-  useEffect(() => {
-    if (router.locale !== 'en') {
-      router.replace(router.route, router.asPath, {
-        locale: 'en',
-      });
-    }
-  }, [router]);
-
   if (!blog) {
     return (
       <div className="h-[80vh] w-full bg-transparent text-center pt-10">

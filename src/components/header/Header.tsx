@@ -31,7 +31,7 @@ export default function Header() {
       <InView
         as="header"
         onChange={setInView}
-        className="h-16 min-h-[4rem] relative bg-primary-500 flex items-center py-0 px-2 text-white"
+        className="h-16 min-h-[4rem] relative bg-[#966767] flex items-center py-0 px-2 text-white"
       >
         <LogoWrapper />
         <WideScreenContentImpl />
