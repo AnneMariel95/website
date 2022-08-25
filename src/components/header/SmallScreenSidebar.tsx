@@ -24,7 +24,7 @@ const sidebarLinks = [
 
 const SmallScreenSidebar: FunctionComponent = () => {
   const router = useRouter();
-  const EMAIL_ADDRESS = 'carloginocatapang@gmail.com';
+  const EMAIL_ADDRESS = 'a.mariel.recio@gmail.com';
   const nodeRef = useRef(null);
   const {hideSidebar, isSidebarVisible} = useHeader();
 
@@ -123,7 +123,7 @@ const SmallScreenSidebar: FunctionComponent = () => {
                     />
                   </NextLink>
                   <NextLink
-                    href={`https://m.me/codegino`}
+                    href={`https://m.me/annemariel.recio`}
                     target="_blank"
                     title="Send me a facebook message"
                     aria-label="Facebook Messenger"
@@ -147,7 +147,7 @@ const SmallScreenSidebar: FunctionComponent = () => {
 
               <div className="flex flex-col items-center min-h-[4rem] justify-end">
                 <p>All rights reserved</p>
-                <p>© Carlo Gino Catapang {new Date().getFullYear()}</p>
+                <p>© Anne Mariel {new Date().getFullYear()}</p>
               </div>
             </section>
           </div>

@@ -15,7 +15,7 @@ export default function Blog({
   return (
     <>
       <Head>
-        <title>My Blogs Listing Page | CodeGino | Carlo Gino Catapang</title>
+        <title>My Blogs Listing Page | Anne Mariel</title>
         {commonMetaTags('Blogs Page', '/blog')}
       </Head>
 

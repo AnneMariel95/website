@@ -18,7 +18,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:creator" content="@code_gino" />
           <meta name="twitter:site" content="@code_gino" />
-          <meta name="author" content="Carlo Gino Catapang" />
+          <meta name="author" content="Anne Mariel" />
           <meta
             name="keywords"
             content="React,React Native,Javascript,Typescript,Remix,NodeJS,HTML,CSS"

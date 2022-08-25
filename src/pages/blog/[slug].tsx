@@ -40,7 +40,7 @@ export default function BlogPage({
         <meta name="keywords" content={blog.keywords?.join(',')} />
         <meta
           property="og:url"
-          content={`https://codegino.com/blog/${blog.slug}`}
+          content={`https://annemariel.com/blog/${blog.slug}`}
         />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={blog.title} />
@@ -67,11 +67,11 @@ export default function BlogPage({
             "@type": "Article",
             "headline": "${blog.title}",
             "image": "${blog.bannerId}",
-            "editor": "Carlo Gino Catapang",
-            "author": "Carlo Gino Catapang",
+            "editor": "Anne Mariel",
+            "author": "Anne Mariel",
             "genre": "${blog.tags?.join(' ')}",
             "keywords": "${blog.keywords?.join(' ')}",
-            "url": "https://codegino.com/blog/${blog.slug}",
+            "url": "https://annemariel.com/blog/${blog.slug}",
             "dateCreated": "${blog.date}",
             "dateModified": "${blog.dateUpdated}",
             "description": "${blog.description}",
@@ -80,7 +80,10 @@ export default function BlogPage({
           }}
         ></script>
 
-        <link rel="canonical" href={`https://codegino.com/blog/${blog.slug}`} />
+        <link
+          rel="canonical"
+          href={`https://annemariel.com/blog/${blog.slug}`}
+        />
       </Head>
 
       <main role="main">

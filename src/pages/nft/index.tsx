@@ -12,7 +12,7 @@ export default function NFT({
   return (
     <main>
       <Head>
-        <title>Carlo Gino Catapang | Code Gino | NFT</title>
+        <title>Anne Mariel | NFT</title>
         {commonMetaTags('NFT Collection', '/nft', 'nft-preview.jpg')}
       </Head>
 
