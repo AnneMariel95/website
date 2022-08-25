@@ -8,6 +8,7 @@ const config = {
       'media2.giphy.com',
       'images.ctfassets.net',
       'openseauserdata.com',
+      'lh3.googleusercontent.com',
     ],
     imageSizes: [16, 32, 48, 64],
     deviceSizes: [

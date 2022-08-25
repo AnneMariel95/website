@@ -1,14 +1,12 @@
 import {useEffect} from 'react';
-import {MDXProvider} from '@mdx-js/react';
 import type {AppProps} from 'next/app';
-import {useRouter} from 'next/router';
 import useDarkMode from 'use-dark-mode';
 import Footer from '../components/Footer';
 import Header from '../components/header/Header';
+import '../styles/__tailwind.css';
 import '../styles/_globals.css';
 import '../styles/animations.css';
 import '../styles/custom.css';
-import '../styles/tailwind.css';
 
 function MyApp({Component, pageProps, router}: AppProps) {
   const {value: isDarkMode} = useDarkMode();

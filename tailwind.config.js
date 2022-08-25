@@ -12,9 +12,7 @@ module.exports = {
       fontFamily: {
         'block-quote': ['Georgia', 'Times New Roman'],
       },
-      fontSize: {
-        inherit: 'inherit',
-      },
+
       zIndex: {
         1: '1',
       },
