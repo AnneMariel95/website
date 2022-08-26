@@ -45,7 +45,7 @@ const socialMedia: SocialMediaProps[] = [
   {
     url: 'https://www.tiktok.com/@annemarielism',
     icon: SiTiktok,
-    title: 'linkedin',
+    title: 'tiktok',
     color: '',
     hoverColor: '#333333',
   },

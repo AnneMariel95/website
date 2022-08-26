@@ -9,6 +9,7 @@ const config = {
       'images.ctfassets.net',
       'openseauserdata.com',
       'lh3.googleusercontent.com',
+      'live.staticflickr.com',
     ],
     imageSizes: [16, 32, 48, 64],
     deviceSizes: [
@@ -23,7 +24,7 @@ const withMDX = require('@next/mdx')({
     remarkPlugins: [],
     rehypePlugins: [],
     // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
+    providerImportSource: '@mdx-js/react',
   },
 });
 

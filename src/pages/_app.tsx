@@ -1,12 +1,16 @@
 import {useEffect} from 'react';
+import {MDXProvider} from '@mdx-js/react';
 import type {AppProps} from 'next/app';
 import useDarkMode from 'use-dark-mode';
 import Footer from '../components/Footer';
 import Header from '../components/header/Header';
+import {Flickr} from '../mdx-embed/components/flickr/Flickr';
 import '../styles/__tailwind.css';
 import '../styles/_globals.css';
 import '../styles/animations.css';
 import '../styles/custom.css';
+
+const components = {Flickr};
 
 function MyApp({Component, pageProps, router}: AppProps) {
   const {value: isDarkMode} = useDarkMode();
@@ -20,10 +24,10 @@ function MyApp({Component, pageProps, router}: AppProps) {
   }, [isDarkMode]);
 
   return (
-    <>
+    <MDXProvider components={components}>
       <Header />
-      {!router.pathname.includes('/blog') ? (
-        <main className="mdx-layout flex flex-col items-center">
+      {!router.pathname.includes('/blog') && router.pathname === '/' ? (
+        <main className="mdx-layout  flex flex-col items-center">
           <Component {...pageProps} />
 
           <style jsx global>{`
@@ -37,6 +41,7 @@ function MyApp({Component, pageProps, router}: AppProps) {
 
             .mdx-layout > ul {
               margin: 0;
+              text-align: center;
             }
 
             .mdx-layout li {
@@ -81,7 +86,7 @@ function MyApp({Component, pageProps, router}: AppProps) {
         <Component {...pageProps} />
       )}
       <Footer />
-    </>
+    </MDXProvider>
   );
 }
 export default MyApp;

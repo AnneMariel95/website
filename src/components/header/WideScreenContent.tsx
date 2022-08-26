@@ -13,7 +13,7 @@ export default function WideScreenContentImpl() {
   const router = useRouter();
 
   return (
-    <div className="hidden items-center justify-between w-full lg:flex">
+    <div className="hidden items-center justify-between w-full sm:flex">
       <nav>
         <ul className="flex items-center p-0 m-0">
           {navigationLinks.map(link => (
