@@ -1,5 +1,4 @@
 import type {FunctionComponent} from 'react';
-import {useRouter} from 'next/router';
 import {IGetPlaiceholderReturn} from 'plaiceholder';
 import {BlurringImage} from '../../components/BlurringImage';
 import type {IBlogMetadata} from '../../models/blog';
@@ -9,8 +8,6 @@ type Props = {
 } & Pick<IGetPlaiceholderReturn, 'svg' | 'img'>;
 
 const BlogHeader: FunctionComponent<Props> = ({blog, img, svg}) => {
-  const {locale} = useRouter();
-
   return (
     <article className="mb-8 text-center flex flex-col items-center">
       <h1 className="mb-0">{blog.title}</h1>
@@ -37,7 +34,6 @@ const BlogHeader: FunctionComponent<Props> = ({blog, img, svg}) => {
         </aside>
       ) : null}
       <br />
-      {locale !== 'en' && <i>Sorry, this blog is only available in English</i>}
     </article>
   );
 };
